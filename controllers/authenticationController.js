@@ -14,7 +14,7 @@ exports.$2fa = (req, res) => {
     if (err) {
       return res.send(err);
     } else {
-      return res.send(`<img src="${dataUrl}" />`);
+      return res.send(`<img src="${dataUrl}" rel='Qr Code'/>`);
     }
   });
 };
