@@ -34,7 +34,7 @@ exports.$validate = (req, res) => {
 
   if (verified) {
     user.twoFactorSecret = user.twoFactorTempSecret;
-    user.twoFactorTempSecret = true;
+    user.twoFactorEnabled = true;
 
     console.info(chalk.green('Successful two factor verification'));
 

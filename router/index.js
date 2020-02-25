@@ -5,7 +5,7 @@ function AppRouter() {
   const router = express.Router();
 
   router.get('/2fa', authController.$2fa);
-  router.get('/auhtneticate', authController.$authenticate);
+  router.get('/authenticate', authController.$authenticate);
   router.post('/verify', authController.$validate);
 
   return router;
